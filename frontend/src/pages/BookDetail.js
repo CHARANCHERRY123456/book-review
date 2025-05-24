@@ -21,7 +21,7 @@ function BookDetail({ match }) {
   return (
     <div>
       <h2>{book.title}</h2>
-      {/* ...other book details... */}
+      {/* ...existing code for book details... */}
       <h3>Reviews</h3>
       <ReviewList reviews={book.reviews} />
       <ReviewForm bookId={book._id} onReviewAdded={fetchBook} />

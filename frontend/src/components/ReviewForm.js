@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { addReview } from '../services/api';
 
 function ReviewForm({ bookId, onReviewAdded }) {
   const [student, setStudent] = useState('');
@@ -7,12 +8,7 @@ function ReviewForm({ bookId, onReviewAdded }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Call API to add review
-    await fetch(`/api/books/${bookId}/reviews`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ student, text, rating }),
-    });
+    await addReview(bookId, { student, text, rating });
     setStudent('');
     setText('');
     setRating(5);
