@@ -1,0 +1,43 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+*.tlog
+*.out
+*.pid
+*.gz
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build output
+build/
+dist/
+out/
+
+# Cache
+.cache/
+.next/
+.vscode/
+.DS_Store
+
+# Coverage
+coverage/
+
+# IDE specific
+.idea/
+*.iml
+
+# Miscellaneous
+*.swp
+*.swo
+*.bak
+*.tmp
+*.orig

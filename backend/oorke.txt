@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MzE1YWI2NWVkOWM3MTNiNzE2ZjZmYiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0ODA2NDk4NCwiZXhwIjoxNzQ4NjY5Nzg0fQ.ybM1XOL9F5CFg_GBlZVjAahHNq3f07ZCPGh-0swRqQ4",
+  "user": {
+    "id": "68315ab65ed9c713b716f6fb",
+    "name": "charan",
+    "email": "charan@gmail.com",
+    "role": "admin"
+  }
+}

@@ -1,0 +1,967 @@
+[
+    {
+        "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+        "author": "Robert C. Martin",
+        "description": "Explores the principles, patterns, and practices for writing clean, readable, and maintainable code.",
+        "coverImage": "https://m.media-amazon.com/images/I/41xR4SIAxSL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Programming",
+            "Software Engineering",
+            "Agile"
+        ],
+        "isbn": "978-0132350884",
+        "publicationYear": 2008,
+        "publisher": "Prentice Hall",
+        "averageRating": 4.6,
+        "reviewCount": 10000,
+        "featured": true,
+        "createdAt": "2024-05-24T10:05:00.000Z",
+        "updatedAt": "2024-05-24T10:05:00.000Z"
+    },
+    {
+        "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+        "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides (Gang of Four)",
+        "description": "Introduces 23 classic software design patterns that provide solutions to common design problems in object-oriented programming.",
+        "coverImage": "https://m.media-amazon.com/images/I/51r7gG7Q+2L._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Software Design",
+            "Object-Oriented Programming"
+        ],
+        "isbn": "978-0201633610",
+        "publicationYear": 1994,
+        "publisher": "Addison-Wesley Professional",
+        "averageRating": 4.5,
+        "reviewCount": 7000,
+        "featured": true,
+        "createdAt": "2024-05-24T10:10:00.000Z",
+        "updatedAt": "2024-05-24T10:10:00.000Z"
+    },
+    {
+        "title": "Refactoring: Improving the Design of Existing Code",
+        "author": "Martin Fowler",
+        "description": "A comprehensive guide to refactoring, explaining how to improve the design of existing code without changing its external behavior.",
+        "coverImage": "https://m.media-amazon.com/images/I/41-94FjM2zL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Software Design",
+            "Refactoring",
+            "Agile"
+        ],
+        "isbn": "978-0134757599",
+        "publicationYear": 2018,
+        "publisher": "Addison-Wesley Professional",
+        "averageRating": 4.7,
+        "reviewCount": 3000,
+        "featured": true,
+        "createdAt": "2024-05-24T10:15:00.000Z",
+        "updatedAt": "2024-05-24T10:15:00.000Z"
+    },
+    {
+        "title": "Code Complete",
+        "author": "Steve McConnell",
+        "description": "A highly practical and comprehensive guide to software construction, covering everything from design to debugging.",
+        "coverImage": "https://m.media-amazon.com/images/I/51f3s+3t8eL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Software Engineering",
+            "Programming Practices"
+        ],
+        "isbn": "978-0735619678",
+        "publicationYear": 2004,
+        "publisher": "Microsoft Press",
+        "averageRating": 4.7,
+        "reviewCount": 8000,
+        "featured": true,
+        "createdAt": "2024-05-24T10:20:00.000Z",
+        "updatedAt": "2024-05-24T10:20:00.000Z"
+    },
+    {
+        "title": "The Mythical Man-Month: Essays on Software Engineering",
+        "author": "Frederick Brooks Jr.",
+        "description": "A classic book on software project management, offering timeless insights into the challenges and complexities of large software projects.",
+        "coverImage": "https://m.media-amazon.com/images/I/41Nn1m5e0LL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Software Engineering",
+            "Project Management"
+        ],
+        "isbn": "978-0201835953",
+        "publicationYear": 1995,
+        "publisher": "Addison-Wesley Professional",
+        "averageRating": 4.6,
+        "reviewCount": 4500,
+        "featured": true,
+        "createdAt": "2024-05-24T10:25:00.000Z",
+        "updatedAt": "2024-05-24T10:25:00.000Z"
+    },
+    {
+        "title": "Introduction to Algorithms",
+        "author": "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein",
+        "description": "A comprehensive textbook covering a wide range of algorithms and data structures.",
+        "coverImage": "https://m.media-amazon.com/images/I/51Jd30I+8BL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Algorithms",
+            "Data Structures",
+            "Computer Science"
+        ],
+        "isbn": "978-0262033848",
+        "publicationYear": 2009,
+        "publisher": "MIT Press",
+        "averageRating": 4.7,
+        "reviewCount": 6000,
+        "featured": true,
+        "createdAt": "2024-05-24T10:30:00.000Z",
+        "updatedAt": "2024-05-24T10:30:00.000Z"
+    },
+    {
+        "title": "Structure and Interpretation of Computer Programs (SICP)",
+        "author": "Harold Abelson, Gerald Jay Sussman, Julie Sussman",
+        "description": "A foundational computer science textbook that teaches programming concepts using Scheme.",
+        "coverImage": "https://m.media-amazon.com/images/I/61F0fX+N5PL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Computer Science",
+            "Programming Concepts"
+        ],
+        "isbn": "978-0262510875",
+        "publicationYear": 1996,
+        "publisher": "MIT Press",
+        "averageRating": 4.7,
+        "reviewCount": 3500,
+        "featured": true,
+        "createdAt": "2024-05-24T10:35:00.000Z",
+        "updatedAt": "2024-05-24T10:35:00.000Z"
+    },
+    {
+        "title": "The Clean Coder: A Code of Conduct for Professional Programmers",
+        "author": "Robert C. Martin",
+        "description": "Focuses on the professional aspects of software development, covering topics like responsibility, communication, and clean code.",
+        "coverImage": "https://m.media-amazon.com/images/I/41D8k-s3jGL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Software Engineering",
+            "Professional Development"
+        ],
+        "isbn": "978-0137081073",
+        "publicationYear": 2011,
+        "publisher": "Prentice Hall",
+        "averageRating": 4.5,
+        "reviewCount": 2500,
+        "featured": false,
+        "createdAt": "2024-05-24T10:40:00.000Z",
+        "updatedAt": "2024-05-24T10:40:00.000Z"
+    },
+    {
+        "title": "Domain-Driven Design: Tackling Complexity in the Heart of Software",
+        "author": "Eric Evans",
+        "description": "Introduces a software development approach that emphasizes a strong focus on the domain model and its implementation.",
+        "coverImage": "https://m.media-amazon.com/images/I/51w7wL0A0xL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Software Design",
+            "Architecture"
+        ],
+        "isbn": "978-0321125217",
+        "publicationYear": 2003,
+        "publisher": "Addison-Wesley Professional",
+        "averageRating": 4.5,
+        "reviewCount": 2000,
+        "featured": true,
+        "createdAt": "2024-05-24T10:45:00.000Z",
+        "updatedAt": "2024-05-24T10:45:00.000Z"
+    },
+    {
+        "title": "Working Effectively with Legacy Code",
+        "author": "Michael C. Feathers",
+        "description": "Provides strategies and techniques for making changes to existing software systems without breaking them.",
+        "coverImage": "https://m.media-amazon.com/images/I/51n9x1Qn6YL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Software Engineering",
+            "Refactoring"
+        ],
+        "isbn": "978-0131177055",
+        "publicationYear": 2004,
+        "publisher": "Prentice Hall",
+        "averageRating": 4.6,
+        "reviewCount": 1800,
+        "featured": false,
+        "createdAt": "2024-05-24T10:50:00.000Z",
+        "updatedAt": "2024-05-24T10:50:00.000Z"
+    },
+    {
+        "title": "Cracking the Coding Interview: 189 Programming Questions and Solutions",
+        "author": "Gayle Laakmann McDowell",
+        "description": "A popular guide for preparing for software engineering interviews, with a focus on data structures, algorithms, and behavioral questions.",
+        "coverImage": "https://m.media-amazon.com/images/I/41Kg5H9zL9L._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Interview Preparation",
+            "Algorithms",
+            "Data Structures"
+        ],
+        "isbn": "978-0984782857",
+        "publicationYear": 2015,
+        "publisher": "CareerCup",
+        "averageRating": 4.6,
+        "reviewCount": 15000,
+        "featured": true,
+        "createdAt": "2024-05-24T10:55:00.000Z",
+        "updatedAt": "2024-05-24T10:55:00.000Z"
+    },
+    {
+        "title": "Code: The Hidden Language of Computer Hardware and Software",
+        "author": "Charles Petzold",
+        "description": "Demystifies how computers work, starting from basic electrical circuits and building up to high-level programming concepts.",
+        "coverImage": "https://m.media-amazon.com/images/I/419d26-7VcL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Computer Science",
+            "Hardware",
+            "Software"
+        ],
+        "isbn": "978-0735611313",
+        "publicationYear": 2000,
+        "publisher": "Microsoft Press",
+        "averageRating": 4.8,
+        "reviewCount": 3000,
+        "featured": true,
+        "createdAt": "2024-05-24T11:00:00.000Z",
+        "updatedAt": "2024-05-24T11:00:00.000Z"
+    },
+    {
+        "title": "Designing Data-Intensive Applications",
+        "author": "Martin Kleppmann",
+        "description": "A comprehensive guide to the challenging aspects of designing and building data systems, including databases, distributed systems, and real-time data processing.",
+        "coverImage": "https://m.media-amazon.com/images/I/51r2Q7D7SXL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "System Design",
+            "Distributed Systems",
+            "Databases"
+        ],
+        "isbn": "978-1449373320",
+        "publicationYear": 2017,
+        "publisher": "O'Reilly Media",
+        "averageRating": 4.8,
+        "reviewCount": 4000,
+        "featured": true,
+        "createdAt": "2024-05-24T11:05:00.000Z",
+        "updatedAt": "2024-05-24T11:05:00.000Z"
+    },
+    {
+        "title": "Clean Architecture: A Craftsman's Guide to Software Structure and Design",
+        "author": "Robert C. Martin",
+        "description": "Explores the fundamental principles and patterns of software architecture, offering practical guidance for building maintainable and scalable systems.",
+        "coverImage": "https://m.media-amazon.com/images/I/41o14Hq4iSL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Software Architecture",
+            "Software Design"
+        ],
+        "isbn": "978-0134494166",
+        "publicationYear": 2017,
+        "publisher": "Prentice Hall",
+        "averageRating": 4.5,
+        "reviewCount": 2800,
+        "featured": true,
+        "createdAt": "2024-05-24T11:10:00.000Z",
+        "updatedAt": "2024-05-24T11:10:00.000Z"
+    },
+    {
+        "title": "Programming Pearls",
+        "author": "Jon Bentley",
+        "description": "A collection of elegant and insightful programming problems and solutions, focusing on efficiency and problem-solving techniques.",
+        "coverImage": "https://m.media-amazon.com/images/I/41iR61kUj8L._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Algorithms",
+            "Programming Challenges"
+        ],
+        "isbn": "978-0201657883",
+        "publicationYear": 1999,
+        "publisher": "Addison-Wesley Professional",
+        "averageRating": 4.5,
+        "reviewCount": 1500,
+        "featured": false,
+        "createdAt": "2024-05-24T11:15:00.000Z",
+        "updatedAt": "2024-05-24T11:15:00.000Z"
+    },
+    {
+        "title": "Head First Design Patterns",
+        "author": "Elisabeth Freeman, Eric Freeman, Bert Bates, Kathy Sierra",
+        "description": "An engaging and visually rich introduction to design patterns, making complex concepts easy to understand.",
+        "coverImage": "https://m.media-amazon.com/images/I/51p1c2p25+L._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Software Design",
+            "Object-Oriented Programming"
+        ],
+        "isbn": "978-0596007126",
+        "publicationYear": 2004,
+        "publisher": "O'Reilly Media",
+        "averageRating": 4.7,
+        "reviewCount": 6000,
+        "featured": true,
+        "createdAt": "2024-05-24T11:20:00.000Z",
+        "updatedAt": "2024-05-24T11:20:00.000Z"
+    },
+    {
+        "title": "Effective Java",
+        "author": "Joshua Bloch",
+        "description": "Offers practical advice and best practices for writing high-quality Java code.",
+        "coverImage": "https://m.media-amazon.com/images/I/41LzBvG1tJL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Java Programming",
+            "Best Practices"
+        ],
+        "isbn": "978-0134685991",
+        "publicationYear": 2018,
+        "publisher": "Addison-Wesley Professional",
+        "averageRating": 4.8,
+        "reviewCount": 4000,
+        "featured": true,
+        "createdAt": "2024-05-24T11:25:00.000Z",
+        "updatedAt": "2024-05-24T11:25:00.000Z"
+    },
+    {
+        "title": "The C Programming Language",
+        "author": "Brian W. Kernighan, Dennis M. Ritchie",
+        "description": "The authoritative book on the C programming language, written by its creators.",
+        "coverImage": "https://m.media-amazon.com/images/I/51N-Y5Y96eL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "C Programming",
+            "Systems Programming"
+        ],
+        "isbn": "978-0131103627",
+        "publicationYear": 1988,
+        "publisher": "Prentice Hall",
+        "averageRating": 4.7,
+        "reviewCount": 5000,
+        "featured": true,
+        "createdAt": "2024-05-24T11:30:00.000Z",
+        "updatedAt": "2024-05-24T11:30:00.000Z"
+    },
+    {
+        "title": "Code Complete, Second Edition",
+        "author": "Steve McConnell",
+        "description": "A classic and comprehensive guide to software construction, emphasizing practical techniques for improving code quality and developer productivity.",
+        "coverImage": "https://m.media-amazon.com/images/I/51f3s+3t8eL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Software Engineering",
+            "Programming Practices"
+        ],
+        "isbn": "978-0735619678",
+        "publicationYear": 2004,
+        "publisher": "Microsoft Press",
+        "averageRating": 4.7,
+        "reviewCount": 8000,
+        "featured": true,
+        "createdAt": "2024-05-24T11:35:00.000Z",
+        "updatedAt": "2024-05-24T11:35:00.000Z"
+    },
+    {
+        "title": "The Art of Computer Programming, Volumes 1-4A Boxed Set",
+        "author": "Donald E. Knuth",
+        "description": "A multi-volume series considered a foundational work in computer science, covering a vast range of algorithms and mathematical foundations.",
+        "coverImage": "https://m.media-amazon.com/images/I/411Q6mJz-yL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Computer Science",
+            "Algorithms",
+            "Mathematics"
+        ],
+        "isbn": "978-0321751041",
+        "publicationYear": 2011,
+        "publisher": "Addison-Wesley Professional",
+        "averageRating": 4.8,
+        "reviewCount": 2000,
+        "featured": true,
+        "createdAt": "2024-05-24T11:40:00.000Z",
+        "updatedAt": "2024-05-24T11:40:00.000Z"
+    },
+    {
+        "title": "Patterns of Enterprise Application Architecture",
+        "author": "Martin Fowler",
+        "description": "A comprehensive guide to common architectural patterns used in enterprise application development.",
+        "coverImage": "https://m.media-amazon.com/images/I/51L3D3h+DQL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Software Architecture",
+            "Enterprise Applications"
+        ],
+        "isbn": "978-0321127426",
+        "publicationYear": 2002,
+        "publisher": "Addison-Wesley Professional",
+        "averageRating": 4.5,
+        "reviewCount": 1500,
+        "featured": false,
+        "createdAt": "2024-05-24T11:45:00.000Z",
+        "updatedAt": "2024-05-24T11:45:00.000Z"
+    },
+    {
+        "title": "Refactoring: Improving the Design of Existing Code, Second Edition",
+        "author": "Martin Fowler",
+        "description": "The updated edition of the classic refactoring guide, now with JavaScript examples and expanded content.",
+        "coverImage": "https://m.media-amazon.com/images/I/41-94FjM2zL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Software Design",
+            "Refactoring",
+            "Agile"
+        ],
+        "isbn": "978-0134757599",
+        "publicationYear": 2018,
+        "publisher": "Addison-Wesley Professional",
+        "averageRating": 4.7,
+        "reviewCount": 3000,
+        "featured": true,
+        "createdAt": "2024-05-24T11:50:00.000Z",
+        "updatedAt": "2024-05-24T11:50:00.000Z"
+    },
+    {
+        "title": "Test-Driven Development by Example",
+        "author": "Kent Beck",
+        "description": "Introduces the practice of Test-Driven Development (TDD) through simple, concrete examples.",
+        "coverImage": "https://m.media-amazon.com/images/I/41F830q4L9L._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Software Development",
+            "Testing",
+            "Agile"
+        ],
+        "isbn": "978-0321146533",
+        "publicationYear": 2002,
+        "publisher": "Addison-Wesley Professional",
+        "averageRating": 4.4,
+        "reviewCount": 1200,
+        "featured": false,
+        "createdAt": "2024-05-24T11:55:00.000Z",
+        "updatedAt": "2024-05-24T11:55:00.000Z"
+    },
+    {
+        "title": "Algorithms (4th Edition)",
+        "author": "Robert Sedgewick, Kevin Wayne",
+        "description": "A comprehensive textbook on algorithms and data structures, with a focus on practical applications in Java.",
+        "coverImage": "https://m.media-amazon.com/images/I/51wB8sR5v9L._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Algorithms",
+            "Data Structures",
+            "Java Programming"
+        ],
+        "isbn": "978-0321572978",
+        "publicationYear": 2011,
+        "publisher": "Addison-Wesley Professional",
+        "averageRating": 4.7,
+        "reviewCount": 2500,
+        "featured": false,
+        "createdAt": "2024-05-24T12:00:00.000Z",
+        "updatedAt": "2024-05-24T12:00:00.000Z"
+    },
+    {
+        "title": "Soft Skills: The Software Developer's Life Manual",
+        "author": "John Sonmez",
+        "description": "Covers a wide range of non-technical topics crucial for a successful software development career, including career, marketing, learning, and finances.",
+        "coverImage": "https://m.media-amazon.com/images/I/51q2gG-152L._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Career Development",
+            "Soft Skills",
+            "Software Engineering"
+        ],
+        "isbn": "978-1617292323",
+        "publicationYear": 2014,
+        "publisher": "Manning Publications",
+        "averageRating": 4.6,
+        "reviewCount": 3500,
+        "featured": false,
+        "createdAt": "2024-05-24T12:05:00.000Z",
+        "updatedAt": "2024-05-24T12:05:00.000Z"
+    },
+    {
+        "title": "Clean Code in Python",
+        "author": "Mariano Anaya",
+        "description": "Applies the principles of clean code to Python, demonstrating how to write maintainable and readable Python programs.",
+        "coverImage": "https://m.media-amazon.com/images/I/41D7d7f26WL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Python Programming",
+            "Clean Code"
+        ],
+        "isbn": "978-1801077530",
+        "publicationYear": 2021,
+        "publisher": "Packt Publishing",
+        "averageRating": 4.3,
+        "reviewCount": 300,
+        "featured": false,
+        "createdAt": "2024-05-24T12:10:00.000Z",
+        "updatedAt": "2024-05-24T12:10:00.000Z"
+    },
+    {
+        "title": "A Philosophy of Software Design",
+        "author": "John Ousterhout",
+        "description": "Offers a concise and powerful philosophy for designing software, emphasizing simplicity and deep design.",
+        "coverImage": "https://m.media-amazon.com/images/I/41xXQ6zL3TL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Software Design",
+            "Software Engineering"
+        ],
+        "isbn": "978-1732102200",
+        "publicationYear": 2018,
+        "publisher": "Yaknyam Press",
+        "averageRating": 4.7,
+        "reviewCount": 1800,
+        "featured": true,
+        "createdAt": "2024-05-24T12:15:00.000Z",
+        "updatedAt": "2024-05-24T12:15:00.000Z"
+    },
+    {
+        "title": "System Design Interview – An Insider's Guide",
+        "author": "Alex Xu",
+        "description": "A comprehensive guide to common system design interview questions and solutions.",
+        "coverImage": "https://m.media-amazon.com/images/I/41m9-3L+0BL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "System Design",
+            "Interview Preparation"
+        ],
+        "isbn": "978-1736049105",
+        "publicationYear": 2020,
+        "publisher": "Independently published",
+        "averageRating": 4.6,
+        "reviewCount": 4500,
+        "featured": true,
+        "createdAt": "2024-05-24T12:20:00.000Z",
+        "updatedAt": "2024-05-24T12:20:00.000Z"
+    },
+    {
+        "title": "Grokking Algorithms",
+        "author": "Aditya Bhargava",
+        "description": "An illustrated guide to algorithms for programmers and other curious minds, making complex concepts intuitive and accessible.",
+        "coverImage": "https://m.media-amazon.com/images/I/41Yn2s0d0TL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Algorithms",
+            "Computer Science"
+        ],
+        "isbn": "978-1617292231",
+        "publicationYear": 2016,
+        "publisher": "Manning Publications",
+        "averageRating": 4.7,
+        "reviewCount": 5000,
+        "featured": true,
+        "createdAt": "2024-05-24T12:25:00.000Z",
+        "updatedAt": "2024-05-24T12:25:00.000Z"
+    },
+    {
+        "title": "The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win",
+        "author": "Gene Kim, Kevin Behr, George Spafford",
+        "description": "A novel that illustrates the principles of DevOps and how to improve IT operations and organizational culture.",
+        "coverImage": "https://m.media-amazon.com/images/I/41h2j-vJ5sL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "DevOps",
+            "IT Management",
+            "Business"
+        ],
+        "isbn": "978-0988262591",
+        "publicationYear": 2013,
+        "publisher": "IT Revolution Press",
+        "averageRating": 4.7,
+        "reviewCount": 9000,
+        "featured": true,
+        "createdAt": "2024-05-24T12:30:00.000Z",
+        "updatedAt": "2024-05-24T12:30:00.000Z"
+    },
+    {
+        "title": "Building Microservices: Designing Fine-Grained Systems",
+        "author": "Sam Newman",
+        "description": "A practical guide to microservices architecture, covering design, testing, deployment, and operation of microservices.",
+        "coverImage": "https://m.media-amazon.com/images/I/51H5tPj6zQL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Microservices",
+            "Software Architecture",
+            "Distributed Systems"
+        ],
+        "isbn": "978-1491950357",
+        "publicationYear": 2015,
+        "publisher": "O'Reilly Media",
+        "averageRating": 4.6,
+        "reviewCount": 2500,
+        "featured": true,
+        "createdAt": "2024-05-24T12:35:00.000Z",
+        "updatedAt": "2024-05-24T12:35:00.000Z"
+    },
+    {
+        "title": "Release It!: Design and Deploy Production-Ready Software",
+        "author": "Michael T. Nygard",
+        "description": "Focuses on patterns for building robust and resilient software systems, especially for production environments.",
+        "coverImage": "https://m.media-amazon.com/images/I/41Qe4c5bTqL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Software Architecture",
+            "DevOps",
+            "Reliability"
+        ],
+        "isbn": "978-0978739218",
+        "publicationYear": 2007,
+        "publisher": "Pragmatic Bookshelf",
+        "averageRating": 4.6,
+        "reviewCount": 1000,
+        "featured": false,
+        "createdAt": "2024-05-24T12:40:00.000Z",
+        "updatedAt": "2024-05-24T12:40:00.000Z"
+    },
+    {
+        "title": "Computer Systems: A Programmer's Perspective",
+        "author": "Randal E. Bryant, David R. O'Hallaron",
+        "description": "A comprehensive book that bridges the gap between hardware and software, explaining how systems work from a programmer's viewpoint.",
+        "coverImage": "https://m.media-amazon.com/images/I/41-lF9x33ML._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Computer Architecture",
+            "Systems Programming"
+        ],
+        "isbn": "978-0136108047",
+        "publicationYear": 2010,
+        "publisher": "Pearson",
+        "averageRating": 4.7,
+        "reviewCount": 2000,
+        "featured": true,
+        "createdAt": "2024-05-24T12:45:00.000Z",
+        "updatedAt": "2024-05-24T12:45:00.000Z"
+    },
+    {
+        "title": "Agile Software Development, Principles, Patterns, and Practices",
+        "author": "Robert C. Martin",
+        "description": "Explores the principles and patterns of agile software development, including SOLID principles and design patterns.",
+        "coverImage": "https://m.media-amazon.com/images/I/413h2iWkMGL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Agile",
+            "Software Design",
+            "Object-Oriented Programming"
+        ],
+        "isbn": "978-0135974440",
+        "publicationYear": 2002,
+        "publisher": "Prentice Hall",
+        "averageRating": 4.4,
+        "reviewCount": 1500,
+        "featured": false,
+        "createdAt": "2024-05-24T12:50:00.000Z",
+        "updatedAt": "2024-05-24T12:50:00.000Z"
+    },
+    {
+        "title": "The Effective Engineer: How to Leverage Your Efforts in Software Engineering to Make a Disproportionate Impact",
+        "author": "Edmond Lau",
+        "description": "Offers practical advice on how to improve efficiency, productivity, and impact as a software engineer.",
+        "coverImage": "https://m.media-amazon.com/images/I/417tYh1WlKL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Career Development",
+            "Productivity",
+            "Software Engineering"
+        ],
+        "isbn": "978-0990717700",
+        "publicationYear": 2015,
+        "publisher": "Ink & Quill Publishing",
+        "averageRating": 4.7,
+        "reviewCount": 1800,
+        "featured": false,
+        "createdAt": "2024-05-24T12:55:00.000Z",
+        "updatedAt": "2024-05-24T12:55:00.000Z"
+    },
+    {
+        "title": "Algorithms to Live By: The Computer Science of Human Decisions",
+        "author": "Brian Christian, Tom Griffiths",
+        "description": "Explores how computer science algorithms can be applied to everyday human problems and decision-making.",
+        "coverImage": "https://m.media-amazon.com/images/I/41R0b42fFzL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Algorithms",
+            "Psychology",
+            "Self-Improvement"
+        ],
+        "isbn": "978-1627790369",
+        "publicationYear": 2016,
+        "publisher": "Henry Holt and Co.",
+        "averageRating": 4.5,
+        "reviewCount": 3000,
+        "featured": false,
+        "createdAt": "2024-05-24T13:00:00.000Z",
+        "updatedAt": "2024-05-24T13:00:00.000Z"
+    },
+    {
+        "title": "Compilers: Principles, Techniques, and Tools (Dragon Book)",
+        "author": "Alfred V. Aho, Monica S. Lam, Ravi Sethi, Jeffrey D. Ullman",
+        "description": "A classic textbook on compiler design, covering lexical analysis, parsing, code generation, and optimization.",
+        "coverImage": "https://m.media-amazon.com/images/I/41rB+M0jG9L._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Compilers",
+            "Computer Science"
+        ],
+        "isbn": "978-0321486893",
+        "publicationYear": 2006,
+        "publisher": "Pearson Education",
+        "averageRating": 4.4,
+        "reviewCount": 1000,
+        "featured": false,
+        "createdAt": "2024-05-24T13:05:00.000Z",
+        "updatedAt": "2024-05-24T13:05:00.000Z"
+    },
+    {
+        "title": "You Don't Know JS Yet (Book Series)",
+        "author": "Kyle Simpson",
+        "description": "A series of books that dive deep into the core mechanisms and intricacies of JavaScript.",
+        "coverImage": "https://m.media-amazon.com/images/I/41d-K-K5+fL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "JavaScript",
+            "Web Development",
+            "Programming"
+        ],
+        "isbn": "978-1491904794",
+        "publicationYear": 2020,
+        "publisher": "O'Reilly Media",
+        "averageRating": 4.7,
+        "reviewCount": 1500,
+        "featured": true,
+        "createdAt": "2024-05-24T13:10:00.000Z",
+        "updatedAt": "2024-05-24T13:10:00.000Z"
+    },
+    {
+        "title": "Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability",
+        "author": "Steve Krug",
+        "description": "A highly influential book on web usability, emphasizing intuitive and user-friendly design.",
+        "coverImage": "https://m.media-amazon.com/images/I/41o7J2FvKFL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Usability",
+            "UX Design",
+            "Web Design"
+        ],
+        "isbn": "978-0321965516",
+        "publicationYear": 2014,
+        "publisher": "New Riders",
+        "averageRating": 4.7,
+        "reviewCount": 4000,
+        "featured": true,
+        "createdAt": "2024-05-24T13:15:00.000Z",
+        "updatedAt": "2024-05-24T13:15:00.000Z"
+    },
+    {
+        "title": "The Art of Readable Code",
+        "author": "Dustin Boswell, Trevor Foucher",
+        "description": "Provides practical techniques and principles for writing code that is easy to understand and maintain.",
+        "coverImage": "https://m.media-amazon.com/images/I/51r5zG97jPL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Programming Practices",
+            "Clean Code"
+        ],
+        "isbn": "978-0596802295",
+        "publicationYear": 2011,
+        "publisher": "O'Reilly Media",
+        "averageRating": 4.5,
+        "reviewCount": 2000,
+        "featured": false,
+        "createdAt": "2024-05-24T13:20:00.000Z",
+        "updatedAt": "2024-05-24T13:20:00.000Z"
+    },
+    {
+        "title": "Automate the Boring Stuff with Python",
+        "author": "Al Sweigart",
+        "description": "A practical guide for beginners to learn Python by automating common tasks, without prior programming experience.",
+        "coverImage": "https://m.media-amazon.com/images/I/51S4gW3N0IL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Python Programming",
+            "Automation",
+            "Beginner"
+        ],
+        "isbn": "978-1593275990",
+        "publicationYear": 2015,
+        "publisher": "No Starch Press",
+        "averageRating": 4.7,
+        "reviewCount": 8000,
+        "featured": true,
+        "createdAt": "2024-05-24T13:25:00.000Z",
+        "updatedAt": "2024-05-24T13:25:00.000Z"
+    },
+    {
+        "title": "Site Reliability Engineering: How Google Runs Production Systems",
+        "author": "Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Richard Murphy",
+        "description": "Offers an inside look at Google's approach to Site Reliability Engineering (SRE), providing practical insights and practices.",
+        "coverImage": "https://m.media-amazon.com/images/I/41-lF9x33ML._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Site Reliability Engineering",
+            "DevOps",
+            "Operations"
+        ],
+        "isbn": "978-1491929124",
+        "publicationYear": 2016,
+        "publisher": "O'Reilly Media",
+        "averageRating": 4.7,
+        "reviewCount": 3500,
+        "featured": true,
+        "createdAt": "2024-05-24T13:30:00.000Z",
+        "updatedAt": "2024-05-24T13:30:00.000Z"
+    },
+    {
+        "title": "Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation",
+        "author": "Jez Humble, David Farley",
+        "description": "A foundational book on continuous delivery, outlining the principles and practices for automating the software delivery pipeline.",
+        "coverImage": "https://m.media-amazon.com/images/I/41b+j7b9kKL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "DevOps",
+            "Software Development",
+            "Automation"
+        ],
+        "isbn": "978-0321601913",
+        "publicationYear": 2010,
+        "publisher": "Addison-Wesley Professional",
+        "averageRating": 4.7,
+        "reviewCount": 2000,
+        "featured": true,
+        "createdAt": "2024-05-24T13:35:00.000Z",
+        "updatedAt": "2024-05-24T13:35:00.000Z"
+    },
+    {
+        "title": "Eloquent JavaScript, 3rd Edition: A Modern Introduction to Programming",
+        "author": "Marijn Haverbeke",
+        "description": "A comprehensive introduction to JavaScript and programming, covering fundamental concepts and advanced topics.",
+        "coverImage": "https://m.media-amazon.com/images/I/5123d5a-XgL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "JavaScript",
+            "Programming",
+            "Web Development"
+        ],
+        "isbn": "978-1593279509",
+        "publicationYear": 2018,
+        "publisher": "No Starch Press",
+        "averageRating": 4.6,
+        "reviewCount": 2500,
+        "featured": false,
+        "createdAt": "2024-05-24T13:40:00.000Z",
+        "updatedAt": "2024-05-24T13:40:00.000Z"
+    },
+    {
+        "title": "Game Programming Patterns",
+        "author": "Robert Nystrom",
+        "description": "Explores common design patterns specifically tailored for game development, addressing performance and flexibility challenges.",
+        "coverImage": "https://m.media-amazon.com/images/I/41f874c7LqL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Game Development",
+            "Design Patterns",
+            "Programming"
+        ],
+        "isbn": "978-0990582902",
+        "publicationYear": 2014,
+        "publisher": "Genever Benning",
+        "averageRating": 4.8,
+        "reviewCount": 900,
+        "featured": false,
+        "createdAt": "2024-05-24T13:45:00.000Z",
+        "updatedAt": "2024-05-24T13:45:00.000Z"
+    },
+    {
+        "title": "Thinking in Java",
+        "author": "Bruce Eckel",
+        "description": "A comprehensive and in-depth guide to the Java programming language, known for its clear explanations and extensive examples.",
+        "coverImage": "https://m.media-amazon.com/images/I/41E9T521m-L._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Java Programming",
+            "Object-Oriented Programming"
+        ],
+        "isbn": "978-0131872486",
+        "publicationYear": 2002,
+        "publisher": "Prentice Hall",
+        "averageRating": 4.5,
+        "reviewCount": 1500,
+        "featured": false,
+        "createdAt": "2024-05-24T13:50:00.000Z",
+        "updatedAt": "2024-05-24T13:50:00.000Z"
+    },
+    {
+        "title": "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses",
+        "author": "Eric Ries",
+        "description": "Introduces the lean startup methodology for developing products and businesses, emphasizing iterative development and validated learning.",
+        "coverImage": "https://m.media-amazon.com/images/I/41nI5j67LwL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Business",
+            "Startup",
+            "Product Management"
+        ],
+        "isbn": "978-0307887894",
+        "publicationYear": 2011,
+        "publisher": "Crown Business",
+        "averageRating": 4.5,
+        "reviewCount": 10000,
+        "featured": false,
+        "createdAt": "2024-05-24T13:55:00.000Z",
+        "updatedAt": "2024-05-24T13:55:00.000Z"
+    },
+    {
+        "title": "The Little Schemer",
+        "author": "Daniel P. Friedman, Matthias Felleisen",
+        "description": "A classic and unique introduction to Scheme and functional programming through a series of questions and answers.",
+        "coverImage": "https://m.media-amazon.com/images/I/51kP-q3t-FL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Functional Programming",
+            "Computer Science",
+            "Scheme"
+        ],
+        "isbn": "978-0262560993",
+        "publicationYear": 1996,
+        "publisher": "MIT Press",
+        "averageRating": 4.6,
+        "reviewCount": 500,
+        "featured": false,
+        "createdAt": "2024-05-24T14:00:00.000Z",
+        "updatedAt": "2024-05-24T14:00:00.000Z"
+    },
+    {
+        "title": "Computer Networking: A Top-Down Approach",
+        "author": "James F. Kurose, Keith W. Ross",
+        "description": "A widely used textbook for understanding computer networking concepts from application layer down to the physical layer.",
+        "coverImage": "https://m.media-amazon.com/images/I/51wXh-7+y6L._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Computer Networking",
+            "Computer Science"
+        ],
+        "isbn": "978-0133594140",
+        "publicationYear": 2016,
+        "publisher": "Pearson",
+        "averageRating": 4.5,
+        "reviewCount": 1200,
+        "featured": false,
+        "createdAt": "2024-05-24T14:05:00.000Z",
+        "updatedAt": "2024-05-24T14:05:00.000Z"
+    },
+    {
+        "title": "The Algorithm Design Manual",
+        "author": "Steven S. Skiena",
+        "description": "Provides a catalog of algorithmic resources and approaches to algorithm design, with a focus on real-world problem-solving.",
+        "coverImage": "https://m.media-amazon.com/images/I/51wXh-7+y6L._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Algorithms",
+            "Data Structures",
+            "Problem Solving"
+        ],
+        "isbn": "978-1848000698",
+        "publicationYear": 2008,
+        "publisher": "Springer",
+        "averageRating": 4.6,
+        "reviewCount": 1000,
+        "featured": false,
+        "createdAt": "2024-05-24T14:10:00.000Z",
+        "updatedAt": "2024-05-24T14:10:00.000Z"
+    },
+    {
+        "title": "Modern Software Engineering: Doing What Works to Build Better Software Faster",
+        "author": "David Farley",
+        "description": "A comprehensive guide to building high-quality software, covering principles, practices, and techniques for modern software development.",
+        "coverImage": "https://m.media-amazon.com/images/I/41D8k-s3jGL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Software Engineering",
+            "Agile",
+            "DevOps"
+        ],
+        "isbn": "978-0137081073",
+        "publicationYear": 2021,
+        "publisher": "Addison-Wesley Professional",
+        "averageRating": 4.7,
+        "reviewCount": 500,
+        "featured": false,
+        "createdAt": "2024-05-24T14:15:00.000Z",
+        "updatedAt": "2024-05-24T14:15:00.000Z"
+    },
+    {
+        "title": "The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change",
+        "author": "Camille Fournier",
+        "description": "A practical guide for navigating various stages of leadership in tech, from mentoring to managing managers.",
+        "coverImage": "https://m.media-amazon.com/images/I/4113vP3f+GL._SY445_SX342_QL70_FMwebp_.jpg",
+        "genre": [
+            "Management",
+            "Leadership",
+            "Software Engineering"
+        ],
+        "isbn": "978-1491973899",
+        "publicationYear": 2017,
+        "publisher": "O'Reilly Media",
+        "averageRating": 4.6,
+        "reviewCount": 2000,
+        "featured": false,
+        "createdAt": "2024-05-24T14:20:00.000Z",
+        "updatedAt": "2024-05-24T14:20:00.000Z"
+    }
+]
