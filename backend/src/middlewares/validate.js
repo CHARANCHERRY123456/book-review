@@ -1,5 +1,5 @@
-const { validationResult } = require('express-validator');
-const ErrorResponse = require('../utils/errorResponse');
+import { validationResult } from 'express-validator';
+import ErrorResponse from '../utils/errorResponse.js';
 
 /**
  * Middleware to validate request using express-validator
@@ -22,4 +22,4 @@ const validate = (req, res, next) => {
   next();
 };
 
-module.exports = validate;
+export default validate;

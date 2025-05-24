@@ -1,8 +1,8 @@
-const { body } = require('express-validator');
-const { VALIDATION } = require('../../constants/errorMessages');
+import { body } from 'express-validator';
+import { VALIDATION } from '../../constants/errorMessages.js';
 
 // Validation rules for user registration
-exports.registerValidator = [
+export const registerValidator = [
   body('name')
     .trim()
     .notEmpty()
@@ -27,7 +27,7 @@ exports.registerValidator = [
 ];
 
 // Validation rules for user login
-exports.loginValidator = [
+export const loginValidator = [
   body('email')
     .trim()
     .notEmpty()

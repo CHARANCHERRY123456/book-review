@@ -1,7 +1,7 @@
-const { body } = require('express-validator');
+import { body } from 'express-validator';
 
 // Validation rules for creating a book
-exports.createBookValidator = [
+export const createBookValidator = [
   body('title')
     .trim()
     .notEmpty()
@@ -34,7 +34,7 @@ exports.createBookValidator = [
 ];
 
 // Validation rules for updating a book
-exports.updateBookValidator = [
+export const updateBookValidator = [
   body('title')
     .optional()
     .trim()

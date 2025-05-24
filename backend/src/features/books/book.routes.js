@@ -1,5 +1,5 @@
-const express = require('express');
-const {
+import express from 'express';
+import {
   getBooks,
   getFeaturedBooks,
   getBookById,
@@ -7,12 +7,12 @@ const {
   createBooksBulk,
   updateBook,
   deleteBook
-} = require('./book.controller');
-const { protect, authorize } = require('../../middlewares/auth');
-const { createBookValidator, updateBookValidator } = require('./book.validator');
-const validate = require('../../middlewares/validate');
-const { BOOKS } = require('../../constants/routes');
-const ROLES = require('../../constants/roles');
+} from './book.controller.js';
+import { protect, authorize } from '../../middlewares/auth';
+import { createBookValidator, updateBookValidator } from './book.validator';
+import validate from '../../middlewares/validate';
+import { BOOKS } from '../../constants/routes';
+import ROLES from '../../constants/roles';
 
 const router = express.Router();
 
@@ -65,4 +65,4 @@ router.delete(
   deleteBook
 );
 
-module.exports = router;
+export default router;

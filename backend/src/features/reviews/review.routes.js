@@ -1,16 +1,16 @@
-const express = require('express');
-const { 
+import express from 'express';
+import { 
   getReviews, 
   getUserReviews,
   getReviewById, 
   createReview, 
   updateReview, 
   deleteReview 
-} = require('./review.controller');
-const { protect } = require('../../middlewares/auth');
-const { createReviewValidator, updateReviewValidator } = require('./review.validator');
-const validate = require('../../middlewares/validate');
-const { REVIEWS } = require('../../constants/routes');
+} from './review.controller.js';
+import { protect } from '../../middlewares/auth';
+import { createReviewValidator, updateReviewValidator } from './review.validator';
+import validate from '../../middlewares/validate';
+import { REVIEWS } from '../../constants/routes';
 
 const router = express.Router();
 
@@ -43,4 +43,4 @@ router.delete(
   deleteReview
 );
 
-module.exports = router;
+export default router;

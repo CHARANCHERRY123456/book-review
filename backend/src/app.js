@@ -1,29 +1,36 @@
-const express = require('express');
-const cors = require('cors');
-const helmet = require('helmet');
-const morgan = require('morgan');
-const rateLimit = require('express-rate-limit');
-const mongoSanitize = require('express-mongo-sanitize');
-const xss = require('xss-clean');
-const hpp = require('hpp');
-const path = require('path');
-require('dotenv').config();
+import express from 'express';
+import cors from 'cors';
+import helmet from 'helmet';
+import morgan from 'morgan';
+import rateLimit from 'express-rate-limit';
+import mongoSanitize from 'express-mongo-sanitize';
+import xss from 'xss-clean';
+import hpp from 'hpp';
+import path from 'path';
+import dotenv from 'dotenv';
+import { fileURLToPath } from 'url';
 
 // Load environment variables
-const { CORS_ORIGIN } = require('./config/env');
+dotenv.config();
 
-// Import route files
-const authRoutes = require('./features/auth/auth.routes');
-const userRoutes = require('./features/users/user.routes');
-const bookRoutes = require('./features/books/book.routes');
-const reviewRoutes = require('./features/reviews/review.routes');
-
-// Import middleware
-const errorHandler = require('./middlewares/errorHandler');
-const requestLogger = require('./middlewares/requestLogger');
+// For __dirname replacement in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Import route constants
-const { AUTH, USERS, BOOKS, REVIEWS } = require('./constants/routes');
+import { CORS_ORIGIN } from './config/env.js';
+
+// Import route files
+import authRoutes from './features/auth/auth.routes.js';
+import userRoutes from './features/users/user.routes.js';
+import bookRoutes from './features/books/book.routes.js';
+import reviewRoutes from './features/reviews/review.routes.js';
+
+// Import middleware
+import errorHandler from './middlewares/errorHandler.js';
+import requestLogger from './middlewares/requestLogger.js';
+
+import { AUTH, USERS, BOOKS, REVIEWS } from './constants/routes.js';
 
 // Create Express app
 const app = express();
@@ -93,4 +100,4 @@ if (process.env.NODE_ENV === 'production') {
 // Error handler middleware (must be after routes)
 app.use(errorHandler);
 
-module.exports = app;
+export default app;

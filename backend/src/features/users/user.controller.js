@@ -1,16 +1,16 @@
-const asyncHandler = require('../../utils/asyncHandler');
-const ErrorResponse = require('../../utils/errorResponse');
-const User = require('./user.model');
-const Review = require('../reviews/review.model');
-const { USER } = require('../../constants/errorMessages');
-const logger = require('../../utils/logger');
+import asyncHandler from '../../utils/asyncHandler.js';
+import ErrorResponse from '../../utils/errorResponse.js';
+import User from './user.model.js';
+import Review from '../reviews/review.model.js';
+import { USER } from '../../constants/errorMessages.js';
+import logger from '../../utils/logger.js';
 
 /**
  * @desc    Get current user profile
  * @route   GET /api/users/profile
  * @access  Private
  */
-exports.getUserProfile = asyncHandler(async (req, res, next) => {
+export const getUserProfile = asyncHandler(async (req, res, next) => {
   const user = await User.findById(req.user.id);
 
   if (!user) {
@@ -38,7 +38,7 @@ exports.getUserProfile = asyncHandler(async (req, res, next) => {
  * @route   PUT /api/users/profile
  * @access  Private
  */
-exports.updateUserProfile = asyncHandler(async (req, res, next) => {
+export const updateUserProfile = asyncHandler(async (req, res, next) => {
   const { name, bio, favoriteGenres } = req.body;
 
   // Fields to update
@@ -85,7 +85,7 @@ exports.updateUserProfile = asyncHandler(async (req, res, next) => {
  * @route   GET /api/users/:id
  * @access  Public
  */
-exports.getUserById = asyncHandler(async (req, res, next) => {
+export const getUserById = asyncHandler(async (req, res, next) => {
   const user = await User.findById(req.params.id);
 
   if (!user) {
@@ -104,4 +104,14 @@ exports.getUserById = asyncHandler(async (req, res, next) => {
     reviewCount,
     createdAt: user.createdAt,
   });
+});
+
+/**
+ * @desc    Get all users (admin only)
+ * @route   GET /api/users
+ * @access  Admin
+ */
+export const getAllUsers = asyncHandler(async (req, res, next) => {
+  const users = await User.find().select('-password');
+  res.status(200).json(users);
 });

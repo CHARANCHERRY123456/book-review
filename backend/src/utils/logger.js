@@ -1,5 +1,6 @@
-const winston = require('winston');
-const path = require('path');
+import winston from 'winston';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 // Define log format
 const logFormat = winston.format.combine(
@@ -9,6 +10,9 @@ const logFormat = winston.format.combine(
     (info) => `${info.timestamp} ${info.level}: ${info.message} ${info.stack || ''}`
   )
 );
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Define logger
 const logger = winston.createLogger({
@@ -54,4 +58,4 @@ const logger = winston.createLogger({
   ],
 });
 
-module.exports = logger;
+export default logger;

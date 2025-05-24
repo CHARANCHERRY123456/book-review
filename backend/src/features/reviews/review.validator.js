@@ -1,8 +1,8 @@
-const { body } = require('express-validator');
-const { VALIDATION } = require('../../constants/errorMessages');
+import { body } from 'express-validator';
+import { VALIDATION } from '../../constants/errorMessages.js';
 
 // Validation rules for creating a review
-exports.createReviewValidator = [
+export const createReviewValidator = [
   body('bookId')
     .notEmpty()
     .withMessage('Book ID is required')
@@ -24,7 +24,7 @@ exports.createReviewValidator = [
 ];
 
 // Validation rules for updating a review
-exports.updateReviewValidator = [
+export const updateReviewValidator = [
   body('rating')
     .optional()
     .isInt({ min: 1, max: 5 })

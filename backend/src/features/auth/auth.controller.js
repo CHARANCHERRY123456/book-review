@@ -1,16 +1,16 @@
-const asyncHandler = require('../../utils/asyncHandler');
-const ErrorResponse = require('../../utils/errorResponse');
-const { generateToken } = require('../../utils/jwtUtils');
-const User = require('../users/user.model');
-const { AUTH } = require('../../constants/errorMessages');
-const logger = require('../../utils/logger');
+import asyncHandler from '../../utils/asyncHandler.js';
+import ErrorResponse from '../../utils/errorResponse.js';
+import { generateToken } from '../../utils/jwtUtils.js';
+import User from '../users/user.model.js';
+import { AUTH } from '../../constants/errorMessages.js';
+import logger from '../../utils/logger.js';
 
 /**
  * @desc    Register a new user
  * @route   POST /api/auth/register
  * @access  Public
  */
-exports.register = asyncHandler(async (req, res, next) => {
+export const register = asyncHandler(async (req, res, next) => {
   const { name, email, password } = req.body;
 
   // Check if user already exists
@@ -39,7 +39,7 @@ exports.register = asyncHandler(async (req, res, next) => {
  * @route   POST /api/auth/login
  * @access  Public
  */
-exports.login = asyncHandler(async (req, res, next) => {
+export const login = asyncHandler(async (req, res, next) => {
   const { email, password } = req.body;
 
   // Check if email and password are provided
@@ -81,7 +81,7 @@ exports.login = asyncHandler(async (req, res, next) => {
  * @route   POST /api/auth/logout
  * @access  Private
  */
-exports.logout = asyncHandler(async (req, res, next) => {
+export const logout = asyncHandler(async (req, res, next) => {
   logger.info(`User logged out: ${req.user?.email || 'Unknown'}`);
 
   res.status(200).json({

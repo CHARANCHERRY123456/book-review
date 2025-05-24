@@ -1,6 +1,6 @@
-const ErrorResponse = require('../utils/errorResponse');
-const logger = require('../utils/logger');
-const { SERVER } = require('../constants/errorMessages');
+import ErrorResponse from '../utils/errorResponse';
+import logger from '../utils/logger';
+import { SERVER } from '../constants/errorMessages';
 
 /**
  * Custom error handler middleware
@@ -50,4 +50,4 @@ const errorHandler = (err, req, res, next) => {
   });
 };
 
-module.exports = errorHandler;
+export default errorHandler;
