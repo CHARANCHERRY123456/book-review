@@ -1,12 +1,12 @@
-import jwt from 'jsonwebtoken';
-import { JWT_SECRET, JWT_EXPIRES_IN } from '../config/env.js';
+const jwt = require('jsonwebtoken');
+const { JWT_SECRET, JWT_EXPIRES_IN } = require('../config/env');
 
 /**
  * Generate a JWT token for a user
  * @param {Object} user - User object with id and role
  * @returns {String} - JWT token
  */
-export const generateToken = (user) => {
+const generateToken = (user) => {
   return jwt.sign(
     { 
       id: user.id, 
@@ -24,6 +24,11 @@ export const generateToken = (user) => {
  * @param {String} token - JWT token to verify
  * @returns {Object} - Decoded token payload
  */
-export const verifyToken = (token) => {
+const verifyToken = (token) => {
   return jwt.verify(token, JWT_SECRET);
+};
+
+module.exports = {
+  generateToken,
+  verifyToken,
 };

@@ -1,16 +1,16 @@
-import asyncHandler from '../../utils/asyncHandler.js';
-import ErrorResponse from '../../utils/errorResponse.js';
-import Review from './review.model.js';
-import Book from '../books/book.model.js';
-import { REVIEW, BOOK } from '../../constants/errorMessages.js';
-import logger from '../../utils/logger.js';
+const asyncHandler = require('../../utils/asyncHandler');
+const ErrorResponse = require('../../utils/errorResponse');
+const Review = require('./review.model');
+const Book = require('../books/book.model');
+const { REVIEW, BOOK } = require('../../constants/errorMessages');
+const logger = require('../../utils/logger');
 
 /**
  * @desc    Get reviews with pagination
  * @route   GET /api/reviews
  * @access  Public
  */
-export const getReviews = asyncHandler(async (req, res, next) => {
+exports.getReviews = asyncHandler(async (req, res, next) => {
   // Filter by book if bookId is provided
   const filter = {};
   if (req.query.bookId) {
@@ -73,7 +73,7 @@ export const getReviews = asyncHandler(async (req, res, next) => {
  * @route   GET /api/reviews/user
  * @access  Private
  */
-export const getUserReviews = asyncHandler(async (req, res, next) => {
+exports.getUserReviews = asyncHandler(async (req, res, next) => {
   // Pagination
   const page = parseInt(req.query.page, 10) || 1;
   const limit = parseInt(req.query.limit, 10) || 10;
@@ -127,7 +127,7 @@ export const getUserReviews = asyncHandler(async (req, res, next) => {
  * @route   GET /api/reviews/:id
  * @access  Public
  */
-export const getReviewById = asyncHandler(async (req, res, next) => {
+exports.getReviewById = asyncHandler(async (req, res, next) => {
   const review = await Review.findById(req.params.id).populate({
     path: 'user',
     select: 'name avatar',
@@ -157,7 +157,7 @@ export const getReviewById = asyncHandler(async (req, res, next) => {
  * @route   POST /api/reviews
  * @access  Private
  */
-export const createReview = asyncHandler(async (req, res, next) => {
+exports.createReview = asyncHandler(async (req, res, next) => {
   const { bookId, rating, content } = req.body;
   
   // Check if book exists
@@ -206,7 +206,7 @@ export const createReview = asyncHandler(async (req, res, next) => {
  * @route   PUT /api/reviews/:id
  * @access  Private
  */
-export const updateReview = asyncHandler(async (req, res, next) => {
+exports.updateReview = asyncHandler(async (req, res, next) => {
   let review = await Review.findById(req.params.id);
   
   if (!review) {
@@ -250,7 +250,7 @@ export const updateReview = asyncHandler(async (req, res, next) => {
       id: review._id,
       bookId: review.book,
       userId: review.user._id,
-      userName: req.user.name,
+      userName: review.user.name,
       rating: review.rating,
       content: review.content,
       createdAt: review.createdAt,
@@ -264,7 +264,7 @@ export const updateReview = asyncHandler(async (req, res, next) => {
  * @route   DELETE /api/reviews/:id
  * @access  Private
  */
-export const deleteReview = asyncHandler(async (req, res, next) => {
+exports.deleteReview = asyncHandler(async (req, res, next) => {
   const review = await Review.findById(req.params.id);
   
   if (!review) {

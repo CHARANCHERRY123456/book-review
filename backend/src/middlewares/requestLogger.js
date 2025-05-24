@@ -1,4 +1,4 @@
-import logger from '../utils/logger';
+const logger = require('../utils/logger');
 
 /**
  * Middleware to log all incoming requests
@@ -24,4 +24,4 @@ const requestLogger = (req, res, next) => {
   next();
 };
 
-export default requestLogger;
+module.exports = requestLogger;

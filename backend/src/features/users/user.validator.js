@@ -1,7 +1,7 @@
-import { body } from 'express-validator';
+const { body } = require('express-validator');
 
 // Validation rules for updating user profile
-export const updateProfileValidator = [
+exports.updateProfileValidator = [
   body('name')
     .optional()
     .trim()

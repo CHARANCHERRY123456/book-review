@@ -1,9 +1,9 @@
-import express from 'express';
-import { getUserProfile, updateUserProfile, getUserById, getAllUsers } from './user.controller.js';
-import { protect, authorize } from '../../middlewares/auth';
-import { updateProfileValidator } from './user.validator';
-import validate from '../../middlewares/validate';
-import { USERS } from '../../constants/routes';
+const express = require('express');
+const { getUserProfile, updateUserProfile, getUserById } = require('./user.controller');
+const { protect } = require('../../middlewares/auth');
+const { updateProfileValidator } = require('./user.validator');
+const validate = require('../../middlewares/validate');
+const { USERS } = require('../../constants/routes');
 
 const router = express.Router();
 
@@ -14,7 +14,4 @@ router.put(USERS.PROFILE, protect, updateProfileValidator, validate, updateUserP
 // Get user by ID (public)
 router.get(USERS.BY_ID, getUserById);
 
-// Admin: Get all users
-router.get('/', protect, authorize('admin'), getAllUsers);
-
-export default router;
+module.exports = router;

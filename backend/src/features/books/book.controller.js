@@ -1,15 +1,15 @@
-import asyncHandler from '../../utils/asyncHandler.js';
-import ErrorResponse from '../../utils/errorResponse.js';
-import Book from './book.model.js';
-import { BOOK } from '../../constants/errorMessages.js';
-import logger from '../../utils/logger.js';
+const asyncHandler = require('../../utils/asyncHandler');
+const ErrorResponse = require('../../utils/errorResponse');
+const Book = require('./book.model');
+const { BOOK } = require('../../constants/errorMessages');
+const logger = require('../../utils/logger');
 
 /**
  * @desc    Get all books with pagination and filters
  * @route   GET /api/books
  * @access  Public
  */
-export const getBooks = asyncHandler(async (req, res, next) => {
+exports.getBooks = asyncHandler(async (req, res, next) => {
   // Build query
   const queryObj = {};
 
@@ -94,7 +94,7 @@ exports.getBookById = asyncHandler(async (req, res, next) => {
  * @route   POST /api/books
  * @access  Private/Admin
  */
-export const createBook = asyncHandler(async (req, res, next) => {
+exports.createBook = asyncHandler(async (req, res, next) => {
   const book = await Book.create(req.body);
 
   logger.info(`Book created: ${book.title}`);

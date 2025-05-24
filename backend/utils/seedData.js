@@ -1,19 +1,15 @@
-import mongoose from 'mongoose';
-import bcrypt from 'bcryptjs';
-import dotenv from 'dotenv';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');
+const dotenv = require('dotenv');
+const path = require('path');
 
 // Load environment variables
 dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 // Import models
-import User from '../src/features/users/user.model.js';
-import Book from '../src/features/books/book.model.js';
-import Review from '../src/features/reviews/review.model.js';
+const User = require('../src/features/users/user.model');
+const Book = require('../src/features/books/book.model');
+const Review = require('../src/features/reviews/review.model');
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, {
