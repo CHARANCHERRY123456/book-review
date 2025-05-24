@@ -8,7 +8,6 @@ import { logger } from './logger';
 // Initialize logger
 logger.init();
 
-alert("this page is responding");
 
 // Log application start
 logger.info('Application started', { timestamp: new Date().toISOString() });
