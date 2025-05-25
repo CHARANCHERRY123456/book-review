@@ -33,7 +33,7 @@ app.use(express.json());
 
 // Enable CORS
 app.use(cors({
-  origin: CORS_ORIGIN,
+  origin: '*', // Allow all origins in development
   credentials: true,
 }));
 

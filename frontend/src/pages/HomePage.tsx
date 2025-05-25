@@ -6,11 +6,13 @@ import Button from '../components/ui/Button';
 import { Book } from '../types/Book';
 import { bookService } from '../services/bookService';
 import { logger } from '../logger';
+import { useAuth } from '../hooks/useAuth'; // adjust path if needed
 
 const HomePage: React.FC = () => {
   const [featuredBooks, setFeaturedBooks] = useState<Book[]>([]);
   const [recentBooks, setRecentBooks] = useState<Book[]>([]);
   const [loading, setLoading] = useState(true);
+  const { user } = useAuth(); // user object should have a 'role' property
 
   useEffect(() => {
     const fetchData = async () => {
@@ -49,11 +51,19 @@ const HomePage: React.FC = () => {
             Join our community of book lovers to find, review, and share the best reads.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/books">
-              <Button size="lg" className="bg-white text-blue-700 hover:bg-blue-50">
-                Explore Books
-              </Button>
-            </Link>
+            {user && user.role === 'admin' ? (
+              <Link to="/admin/books/add">
+                <Button size="lg" className="bg-white text-black hover:bg-blue-50">
+                  Add Book
+                </Button>
+              </Link>
+            ) : (
+              <Link to="/books">
+                <Button size="lg" className="bg-white text-black hover:bg-blue-50">
+                  Explore Books
+                </Button>
+              </Link>
+            )}
             <Link to="/register">
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-blue-700">
                 Join Now
