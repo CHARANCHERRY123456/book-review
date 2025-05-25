@@ -53,13 +53,13 @@ const HomePage: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             {user && user.role === 'admin' ? (
               <Link to="/admin/books/add">
-                <Button size="lg" className="bg-white text-black hover:bg-blue-50">
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-blue-700">
                   Add Book
                 </Button>
               </Link>
             ) : (
               <Link to="/books">
-                <Button size="lg" className="bg-white text-black hover:bg-blue-50">
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-blue-700">
                   Explore Books
                 </Button>
               </Link>
