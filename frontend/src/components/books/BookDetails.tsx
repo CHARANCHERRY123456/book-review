@@ -23,7 +23,7 @@ const BookDetails: React.FC<BookDetailsProps> = ({ book }) => {
             <div className="flex justify-between items-center mb-2">
               <div className="flex items-center">
                 <Star className="text-yellow-500 fill-current mr-1" size={20} />
-                <span className="font-bold text-lg">{book.averageRating.toFixed(1)}</span>
+                <span className="font-bold text-lg">{book.averageRating?.toFixed(1) || 'N/A'}</span>
               </div>
               <span className="text-gray-600 text-sm">{book.reviewCount} reviews</span>
             </div>
@@ -67,7 +67,7 @@ const BookDetails: React.FC<BookDetailsProps> = ({ book }) => {
         <p className="text-xl text-gray-700 mb-4">by {book.author}</p>
         
         <div className="flex flex-wrap gap-2 mb-6">
-          {book.genre.map((genre, index) => (
+          {book.genre && book.genre.map((genre, index) => (
             <span 
               key={index} 
               className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"

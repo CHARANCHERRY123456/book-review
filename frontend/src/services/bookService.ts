@@ -27,6 +27,11 @@ export const bookService = {
   },
 
   async getBookById(id: string): Promise<Book> {
+    console.log(`Fetching book with ID: ${id}` , typeof id);
+    
+    if (typeof id !== 'string') {
+      throw new Error('getBookById expects a string id');
+    }
     const response = await apiClient.get(API_ROUTES.BOOK_BY_ID(id));
     return {
       ...response.data,

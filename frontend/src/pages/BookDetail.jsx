@@ -8,6 +8,8 @@ function BookDetail({ match }) {
   const fetchBook = async () => {
     const res = await fetch(`/api/books/${match.params.id}`);
     const data = await res.json();
+    console.log(data , "this is loading data");
+    
     setBook(data);
   };
 
@@ -21,6 +23,12 @@ function BookDetail({ match }) {
   return (
     <div>
       <h2>{book.title}</h2>
+      <div>
+        <strong>Average Rating:</strong>{" "}
+        {book.averageRating !== undefined && book.averageRating !== null
+          ? book.averageRating.toFixed(1)
+          : 'N/A'}
+      </div>
       {/* ...existing code for book details... */}
       <h3>Reviews</h3>
       <ReviewList reviews={book.reviews} />

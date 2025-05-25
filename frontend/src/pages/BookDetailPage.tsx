@@ -27,8 +27,12 @@ const BookDetailPage: React.FC = () => {
     const fetchBookData = async () => {
       try {
         setLoading(true);
+        logger.info('Loading book details', { bookId: id });
+        logger.info(`Fetching book with ID: ${id}`, typeof id);
         const bookData = await bookService.getBookById(id);
-        setBook(bookData);
+        console.log(`Fetched book data:`, bookData);
+        
+        setBook(bookData.data);
         logger.info('Book details loaded', { bookId: id });
       } catch (error) {
         logger.error('Failed to load book details', { error, bookId: id });
