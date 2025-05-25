@@ -50,7 +50,9 @@ const ProfilePage: React.FC = () => {
     const fetchUserReviews = async () => {
       try {
         setReviewsLoading(true);
-        const response = await reviewService.getUserReviews();
+        console.log(`user details`, user);
+        
+        const response = await reviewService.getUserReviews(user.id); // Pass userId here
         setUserReviews(response.data);
         logger.info('User reviews loaded');
       } catch (error) {

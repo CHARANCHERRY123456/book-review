@@ -11,7 +11,7 @@ export const API_ROUTES = {
   BOOK_BY_ID: (id: string) => `${API_BASE_URL}/books/${id}`,
   
   // Review routes
-  REVIEWS: `${API_BASE_URL}/reviews`,
+  REVIEWS: `${API_BASE_URL}/user/reviews`,
   REVIEWS_BY_BOOK: (bookId: string) => `${API_BASE_URL}/reviews?bookId=${bookId}`,
   REVIEW_BY_ID: (id: string) => `${API_BASE_URL}/reviews/${id}`,
   

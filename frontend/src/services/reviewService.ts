@@ -9,12 +9,16 @@ export const reviewService = {
   },
 
   async addReview(reviewData: NewReview): Promise<Review> {
+    console.log('Adding review:', reviewData);
+    
     const response = await apiClient.post(API_ROUTES.REVIEWS, reviewData);
     return response.data;
   },
 
-  async getUserReviews(page = 1, limit = 10): Promise<PaginatedResponse<Review>> {
-    const response = await apiClient.get(`${API_ROUTES.REVIEWS}/user?page=${page}&limit=${limit}`);
+  async getUserReviews(userId: string, page = 1, limit = 10): Promise<PaginatedResponse<Review>> {
+    console.log("sedning request to get user reviews", { userId, page, limit });
+    
+    const response = await apiClient.get(`${API_ROUTES.REVIEWS}?page=${page}&limit=${limit}`);
     return response.data;
   },
 
