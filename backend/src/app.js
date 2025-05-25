@@ -9,9 +9,6 @@ const hpp = require('hpp');
 const path = require('path');
 require('dotenv').config();
 
-// Load environment variables
-const { CORS_ORIGIN } = require('./config/env');
-
 // Import route files
 const authRoutes = require('./features/auth/auth.routes');
 const userRoutes = require('./features/users/user.routes');
@@ -31,9 +28,9 @@ const app = express();
 // Body parser
 app.use(express.json());
 
-// Enable CORS
+// Enable CORS for all origins
 app.use(cors({
-  origin: '*', // Allow all origins in development
+  origin: '*', // Allow all origins
   credentials: true,
 }));
 
