@@ -20,9 +20,11 @@ const HomePage: React.FC = () => {
         const featuredBooks = await bookService.getFeaturedBooks();
         setFeaturedBooks(featuredBooks);
 
+        console.log('Featured Books:', featuredBooks);
 
         const recentResponse = await bookService.getBooks(1, 5);
         setRecentBooks(recentResponse.data);
+        console.log('Recent Books:', recentResponse);
 
         logger.info('Home page data loaded');
       } catch (error) {

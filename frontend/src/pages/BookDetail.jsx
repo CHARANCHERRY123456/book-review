@@ -8,6 +8,7 @@ function BookDetail({ match }) {
   const fetchBook = async () => {
     const res = await fetch(`/api/books/${match.params.id}`);
     const data = await res.json();
+    console.log(data , "this is loading data");
     
     setBook(data);
   };

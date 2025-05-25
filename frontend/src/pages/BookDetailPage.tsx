@@ -27,7 +27,10 @@ const BookDetailPage: React.FC = () => {
     const fetchBookData = async () => {
       try {
         setLoading(true);
+        logger.info('Loading book details', { bookId: id });
+        logger.info(`Fetching book with ID: ${id}`, typeof id);
         const bookData = await bookService.getBookById(id);
+        console.log(`Fetched book data:`, bookData);
         
         setBook(bookData.data);
         logger.info('Book details loaded', { bookId: id });
@@ -119,7 +122,7 @@ const BookDetailPage: React.FC = () => {
         
         {/* Review Form */}
         <div className="mb-8">
-          <ReviewForm bookId={book._id} onSubmit={handleReviewSubmit} />
+          <ReviewForm bookId={book.id} onSubmit={handleReviewSubmit} />
         </div>
         
         {/* Review List */}
