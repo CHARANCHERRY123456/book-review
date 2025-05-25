@@ -16,10 +16,13 @@ const router = express.Router();
 
 // Public routes
 router.get('/', getReviews);
+
+// Move this private route above REVIEWS.BY_ID to avoid conflict
+router.get(REVIEWS.BY_USER, protect, getUserReviews);
+
 router.get(REVIEWS.BY_ID, getReviewById);
 
-// Private routes
-router.get(REVIEWS.BY_USER, protect, getUserReviews);
+
 
 router.post(
   '/', 
@@ -40,5 +43,7 @@ router.delete(
   protect, 
   deleteReview
 );
+
+// Private routes
 
 module.exports = router;

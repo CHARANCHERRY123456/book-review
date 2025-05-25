@@ -75,6 +75,8 @@ exports.getReviews = asyncHandler(async (req, res, next) => {
  * @access  Private
  */
 exports.getUserReviews = asyncHandler(async (req, res, next) => {
+  console.log("the user asing is " , req.user);
+  
   // Pagination
   const page = parseInt(req.query.page, 10) || 1;
   const limit = parseInt(req.query.limit, 10) || 10;
