@@ -9,6 +9,8 @@ export const reviewService = {
   },
 
   async addReview(reviewData: NewReview): Promise<Review> {
+    console.log("Adding review data:", reviewData);
+    
     const response = await apiClient.post(API_ROUTES.REVIEWS, reviewData);
     return response.data;
   },

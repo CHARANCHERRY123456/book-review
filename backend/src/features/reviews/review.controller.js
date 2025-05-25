@@ -159,7 +159,7 @@ exports.getReviewById = asyncHandler(async (req, res, next) => {
  * @access  Private
  */
 exports.createReview = asyncHandler(async (req, res, next) => {
-  const { bookId, rating, content } = req.body;
+  const {  rating, content, bookId } = req.body;
   console.log("received body:", req.body);
   
   

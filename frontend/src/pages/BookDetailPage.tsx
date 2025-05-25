@@ -122,7 +122,7 @@ const BookDetailPage: React.FC = () => {
         
         {/* Review Form */}
         <div className="mb-8">
-          <ReviewForm bookId={book.id} onSubmit={handleReviewSubmit} />
+          <ReviewForm bookId={book._id} onSubmit={handleReviewSubmit} />
         </div>
         
         {/* Review List */}
