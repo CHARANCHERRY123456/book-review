@@ -22,6 +22,6 @@ module.exports = {
     BASE: `${BASE_PATH}/reviews`,
     BY_ID: `/:id`,
     BY_BOOK: `/book/:bookId`,
-    BY_USER: `/user`,
+    BY_USER: `${BASE_PATH}/reviews`,
   },
 };

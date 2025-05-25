@@ -5,9 +5,7 @@ const { VALIDATION } = require('../../constants/errorMessages');
 exports.createReviewValidator = [
   body('bookId')
     .notEmpty()
-    .withMessage('Book ID is required')
-    .isMongoId()
-    .withMessage(VALIDATION.INVALID_ID),
+    .withMessage('Book ID is required'),
     
   body('rating')
     .notEmpty()

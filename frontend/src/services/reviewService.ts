@@ -14,7 +14,7 @@ export const reviewService = {
   },
 
   async getUserReviews(page = 1, limit = 10): Promise<PaginatedResponse<Review>> {
-    const response = await apiClient.get(`${API_ROUTES.REVIEWS}/user?page=${page}&limit=${limit}`);
+    const response = await apiClient.get(`${API_ROUTES.REVIEWS}?page=${page}&limit=${limit}`);
     return response.data;
   },
 

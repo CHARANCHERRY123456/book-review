@@ -24,8 +24,6 @@ router.get(REVIEWS.BY_USER, protect, getUserReviews);
 router.post(
   '/', 
   protect, 
-  createReviewValidator, 
-  validate, 
   createReview
 );
 

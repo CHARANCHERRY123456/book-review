@@ -4,6 +4,7 @@ const Review = require('./review.model');
 const Book = require('../books/book.model');
 const { REVIEW, BOOK } = require('../../constants/errorMessages');
 const logger = require('../../utils/logger');
+const { default: mongoose } = require('mongoose');
 
 /**
  * @desc    Get reviews with pagination
@@ -159,6 +160,9 @@ exports.getReviewById = asyncHandler(async (req, res, next) => {
  */
 exports.createReview = asyncHandler(async (req, res, next) => {
   const { bookId, rating, content } = req.body;
+  console.log("received body:", req.body);
+  
+  
   
   // Check if book exists
   const book = await Book.findById(bookId);
