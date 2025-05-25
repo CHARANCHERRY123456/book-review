@@ -14,21 +14,42 @@ export const bookService = {
     }
     
     const response = await apiClient.get(url);
-    return response.data;
+
+    const mappedBooks = response.data.data.map((book: any) => ({
+      ...book,
+      id: book._id,
+    }));
+
+    return {
+      ...response.data,
+      data: mappedBooks,
+    };
   },
 
   async getBookById(id: string): Promise<Book> {
     const response = await apiClient.get(API_ROUTES.BOOK_BY_ID(id));
-    return response.data;
+    return {
+      ...response.data,
+      id: response.data._id,
+    };
   },
 
   async addBook(bookData: Omit<Book, 'id' | 'createdAt' | 'updatedAt'>): Promise<Book> {
     const response = await apiClient.post(API_ROUTES.BOOKS, bookData);
-    return response.data;
+    return {
+      ...response.data,
+      id: response.data._id,
+    };
   },
 
   async getFeaturedBooks(): Promise<Book[]> {
     const response = await apiClient.get(`${API_ROUTES.BOOKS}/featured`);
-    return response.data;
+    const books = Array.isArray(response.data)
+      ? response.data
+      : response.data.data;
+    return books.map((book: any) => ({
+      ...book,
+      id: book._id,
+    }));
   }
 };

@@ -5,7 +5,7 @@ import Input from '../components/ui/Input';
 import Button from '../components/ui/Button';
 import { bookService } from '../services/bookService';
 import { logger } from '../logger';
-import { MESSAGES } from '../constants/messages';
+// import { MESSAGES } from '../constants/messages';
 
 const AddBookPage: React.FC = () => {
   const navigate = useNavigate();
@@ -67,7 +67,7 @@ const AddBookPage: React.FC = () => {
       });
       
       logger.info('Book added successfully', { bookId: newBook.id });
-      window.showToast(MESSAGES.BOOK_ADDED_SUCCESS, 'success');
+      // window.showToast(MESSAGES.BOOK_ADDED_SUCCESS, 'success');
       
       // Redirect to the new book page
       navigate(`/books/${newBook.id}`);

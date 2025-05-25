@@ -16,15 +16,16 @@ const HomePage: React.FC = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        
-        // In a real app, we would have specific endpoints for featured and recent books
-        // For now, we'll simulate with the regular books endpoint
-        const featuredResponse = await bookService.getFeaturedBooks();
-        setFeaturedBooks(featuredResponse);
-        
+
+        const featuredBooks = await bookService.getFeaturedBooks();
+        setFeaturedBooks(featuredBooks);
+
+        console.log('Featured Books:', featuredBooks);
+
         const recentResponse = await bookService.getBooks(1, 5);
         setRecentBooks(recentResponse.data);
-        
+        console.log('Recent Books:', recentResponse);
+
         logger.info('Home page data loaded');
       } catch (error) {
         logger.error('Failed to load home page data', { error });

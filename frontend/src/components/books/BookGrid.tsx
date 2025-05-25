@@ -11,7 +11,6 @@ const BookGrid: React.FC<BookGridProps> = ({ books, loading = false }) => {
   // Ensure books is always an array
   const safeBooks: Book[] = Array.isArray(books) ? books : [];
 
-  console.log(safeBooks, "is the found books and is of type", typeof safeBooks);
 
   if (loading) {
     return (

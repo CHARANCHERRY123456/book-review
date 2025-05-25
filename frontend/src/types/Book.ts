@@ -1,15 +1,16 @@
 export interface Book {
-  id: string;
+  id: string;           // Always present in frontend
+  _id?: string;         // Optional, for backend compatibility
   title: string;
   author: string;
   description: string;
-  coverImage: string;
+  coverImage?: string;
+  isbn?: string;
+  publicationYear?: number;
+  publisher?: string;
   genre: string[];
-  isbn: string;
-  publicationYear: number;
-  publisher: string;
-  averageRating: number;
-  reviewCount: number;
+  averageRating?: number;
+  reviewCount?: number;
   createdAt: string;
   updatedAt: string;
 }
