@@ -79,7 +79,7 @@ const BookDetailPage: React.FC = () => {
       window.showToast(MESSAGES.REVIEW_SUBMIT_SUCCESS, 'success');
     } catch (error) {
       logger.error('Failed to submit review', { error, bookId: id });
-      window.showToast('Failed to submit review. Please try again.', 'error');
+      window.showToast('you have submitted a review already');
     }
   };
 

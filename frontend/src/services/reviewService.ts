@@ -11,7 +11,8 @@ export const reviewService = {
   async addReview(reviewData: NewReview): Promise<Review> {
     
     const response = await apiClient.post(API_ROUTES.REVIEWS, reviewData);
-    return response.data;
+    console.log(response.data.data , "is the response from addReview");
+    return response.data.data;
   },
 
   async getUserReviews(page = 1, limit = 10): Promise<PaginatedResponse<Review>> {

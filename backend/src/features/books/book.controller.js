@@ -3,6 +3,12 @@ const ErrorResponse = require('../../utils/errorResponse');
 const Book = require('./book.model');
 const { BOOK } = require('../../constants/errorMessages');
 const logger = require('../../utils/logger');
+const BookRepository = require('./book.repository');
+const BookService = require('./book.service');
+
+// Instantiate repository and service
+const bookRepository = new BookRepository(Book);
+const bookService = new BookService(bookRepository);
 
 /**
  * @desc    Get all books with pagination and filters
@@ -32,13 +38,13 @@ exports.getBooks = asyncHandler(async (req, res, next) => {
   const startIndex = (page - 1) * limit;
 
   // Execute query
-  const books = await Book.find(queryObj)
-    .sort({ createdAt: -1 })
-    .skip(startIndex)
-    .limit(limit);
+  const books = await bookService.getAllBooks(queryObj);
+  const paginatedBooks = books
+    .sort((a, b) => b.createdAt - a.createdAt)
+    .slice(startIndex, startIndex + limit);
 
   // Get total count
-  const totalCount = await Book.countDocuments(queryObj);
+  const totalCount = books.length;
 
   // Pagination result
   const pagination = {
@@ -51,7 +57,7 @@ exports.getBooks = asyncHandler(async (req, res, next) => {
   res.status(200).json({
     success: true,
     pagination,
-    data: books,
+    data: paginatedBooks,
   });
 });
 
@@ -61,13 +67,12 @@ exports.getBooks = asyncHandler(async (req, res, next) => {
  * @access  Public
  */
 exports.getFeaturedBooks = asyncHandler(async (req, res, next) => {
-  const books = await Book.find({ featured: true })
-    .sort({ averageRating: -1 })
-    .limit(10);
+  const books = await bookService.getAllBooks({ featured: true });
+  const sorted = books.sort((a, b) => b.averageRating - a.averageRating).slice(0, 10);
 
   res.status(200).json({
     success: true,
-    data: books,
+    data: sorted,
   });
 });
 
@@ -77,7 +82,7 @@ exports.getFeaturedBooks = asyncHandler(async (req, res, next) => {
  * @access  Public
  */
 exports.getBookById = asyncHandler(async (req, res, next) => {
-  const book = await Book.findById(req.params.id);
+  const book = await bookService.getBookById(req.params.id);
 
   if (!book) {
     return next(new ErrorResponse(BOOK.NOT_FOUND, 404));
@@ -95,7 +100,7 @@ exports.getBookById = asyncHandler(async (req, res, next) => {
  * @access  Private/Admin
  */
 exports.createBook = asyncHandler(async (req, res, next) => {
-  const book = await Book.create(req.body);
+  const book = await bookService.createBook(req.body);
 
   logger.info(`Book created: ${book.title}`);
 
@@ -117,6 +122,7 @@ exports.createBooksBulk = asyncHandler(async (req, res, next) => {
     return next(new ErrorResponse('Request body must be a non-empty array of books', 400));
   }
 
+  // Use model directly for insertMany to preserve bulk logic
   const books = await Book.insertMany(booksData);
 
   logger.info(`Bulk books created: ${books.length} books`);
@@ -134,7 +140,7 @@ exports.createBooksBulk = asyncHandler(async (req, res, next) => {
  * @access  Private/Admin
  */
 exports.updateBook = asyncHandler(async (req, res, next) => {
-  let book = await Book.findById(req.params.id);
+  let book = await bookService.getBookById(req.params.id);
 
   if (!book) {
     return next(new ErrorResponse(BOOK.NOT_FOUND, 404));
@@ -143,10 +149,7 @@ exports.updateBook = asyncHandler(async (req, res, next) => {
   // Add updatedAt timestamp
   req.body.updatedAt = Date.now();
 
-  book = await Book.findByIdAndUpdate(req.params.id, req.body, {
-    new: true,
-    runValidators: true,
-  });
+  book = await bookService.updateBook(req.params.id, req.body);
 
   logger.info(`Book updated: ${book.title}`);
 
@@ -162,13 +165,13 @@ exports.updateBook = asyncHandler(async (req, res, next) => {
  * @access  Private/Admin
  */
 exports.deleteBook = asyncHandler(async (req, res, next) => {
-  const book = await Book.findById(req.params.id);
+  const book = await bookService.getBookById(req.params.id);
 
   if (!book) {
     return next(new ErrorResponse(BOOK.NOT_FOUND, 404));
   }
 
-  await Book.findByIdAndDelete(req.params.id);
+  await bookService.deleteBook(req.params.id);
 
   logger.info(`Book deleted: ${book.title}`);
 
